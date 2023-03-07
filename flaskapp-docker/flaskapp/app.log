@@ -1,0 +1,47 @@
+INFO:app:Hello, World!
+INFO:app:Hello, World!
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/ubuntu/flaskapp/app.py", line 12, in hello_world
+    return  render_template("home.html")
+NameError: name 'render_template' is not defined
+INFO:app:Hello, World!
+INFO:app:Hello, World!
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/ubuntu/flaskapp/app.py", line 12, in hello_world
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask/templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/usr/lib/python3/dist-packages/jinja2/environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/lib/python3/dist-packages/jinja2/environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "/usr/lib/python3/dist-packages/jinja2/environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/usr/lib/python3/dist-packages/jinja2/loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask/templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: home.html
+INFO:app:Hello, World!
+INFO:app:Hello, World!
+INFO:app:Hello, World!
+INFO:app:Hello, World!
