@@ -1,3 +1,4 @@
+#this is a docker-compose file for setting up the project
 version: '3'
 
 services: 
